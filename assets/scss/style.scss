@@ -1,0 +1,30 @@
+@import './reset/reset.css';
+$dark: #000;
+$light: #fff;
+
+body{
+    background-color: $dark;
+    color: $light;
+}
+
+.hero__ct{
+    
+    & .hero__swiper{
+        height: 85svh;
+        & .card{
+            &__img img{
+
+            }
+        }
+    }
+}
+
+.showcase__ct{
+    & .showcase__caption{
+        &--title{}
+        &--text{
+            margin: auto;
+            max-width: 768px;
+        }
+    }
+}

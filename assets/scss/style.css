@@ -1,0 +1,13 @@
+@import './reset/reset.css';
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.hero__ct .hero__swiper {
+  height: 85svh;
+}
+.showcase__ct .showcase__caption--text {
+  margin: auto;
+  max-width: 768px;
+}/*# sourceMappingURL=style.css.map */
