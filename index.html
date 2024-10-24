@@ -1,101 +1,483 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <nav>
-
-    </nav>
 
     <section class="hero__ct">
+        <nav class="row justify-center">
+            <ul class="row gap-1 p-1">
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+            </ul>
+        </nav>
         <swiper-container class="hero__swiper" pagination="true">
             <swiper-slide class="card">
-                <img src="./assets/img/1.jpg" alt="">
+                <img src="./assets/img/banner-1.jpg" alt="">
             </swiper-slide>
             <swiper-slide class="card">
-                <img src="./assets/img/2.jpg" alt="">
+                <img src="./assets/img//banner-2.jpg" alt="">
             </swiper-slide>
             <swiper-slide class="card">
-                <img src="./assets/img/3.jpg" alt="">
+                <img src="./assets/img/banner-3.jpg" alt="">
             </swiper-slide>
         </swiper-container>
     </section>
 
-    <section class="showcase__ct">
-        <div class="showcase__caption col gap-05">
-            <h2 class="showcase__caption--title text-center">Lorem Ipsum</h2>
-            <p class="showcase__caption--text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, dolores. Tenetur aspernatur nobis
+    <!-- <section class="showcase__ct">
+        <div class="showcase__caption col gap-05 p-4">
+            <h2 class="showcase__caption--title text-center lg-title">Lorem Ipsum</h2>
+            <p class="showcase__caption--text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Atque, dolores. Tenetur aspernatur nobis
                 molestias ullam vitae? Voluptates, nemo consequuntur facilis, exercitationem est, possimus quasi
                 reiciendis aliquam deserunt maxime voluptas ducimus numquam culpa? Vel temporibus repellendus esse ullam
                 quam id magnam repudiandae omnis dignissimos. Voluptatum asperiores aliquid magni, vero tenetur,
                 molestias nobis laudantium doloribus quia, minima rem saepe. Sequi, ullam expedita!</p>
         </div>
-        <div class="row justify-between">
-            <div class="card p-2">
-                <div class="card__img">
-
+        <div class="row justify-between  gap-1">
+            <div class="showcase__card p-2">
+                <div class="showcase__card--img row justify-center align-center">
+                    <img src="./assets/img/showcase-1.png" alt="">
                 </div>
-                <div class="card__caption col gap-05">
-                    <h2 class="text-center">Lorem Ipsum</h2>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum veniam nemo.</p>
-                </div>
-            </div>
-            <div class="card p-2">
-                <div class="card__img">
-
-                </div>
-                <div class="card__caption col gap-05">
-                    <h2 class="text-center">Lorem Ipsum</h2>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum veniam nemo.</p>
+                <div class="showcase__card--caption col gap-05">
+                    <h2 class="text-center lg-title">Lorem Ipsum</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum
+                        veniam nemo.</p>
                 </div>
             </div>
-            <div class="card p-2">
-                <div class="card__img">
-
+            <div class="showcase__card p-2">
+                <div class="showcase__card--img row justify-center align-center">
+                    <img src="./assets/img/showcase-2.png" alt="">
                 </div>
-                <div class="card__caption col gap-05">
-                    <h2 class="text-center">Lorem Ipsum</h2>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum veniam nemo.</p>
-                </div>
-            </div>
-            <div class="card p-2">
-                <div class="card__img">
-
-                </div>
-                <div class="card__caption col gap-05">
-                    <h2 class="text-center">Lorem Ipsum</h2>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum veniam nemo.</p>
+                <div class="showcase__card--caption col gap-05">
+                    <h2 class="text-center lg-title">Lorem Ipsum</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum
+                        veniam nemo.</p>
                 </div>
             </div>
+            <div class="showcase__card p-2">
+                <div class="showcase__card--img row justify-center align-center">
+                    <img src="./assets/img/showcase-3.png" alt="">
+                </div>
+                <div class="showcase__card--caption col gap-05">
+                    <h2 class="text-center lg-title">Lorem Ipsum</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum
+                        veniam nemo.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
+    <!-- <section class="carrossel__ct">
+        <div class="carrossel__caption">
+            <h2 class="carrossel__caption--title text-center col">
+                <span class="lg-title misc">shot on</span>
+                <span class="lg-title">red</span>
+            </h2>
+        </div>
+    </section> -->
+
+    <section class="map__ct col">
+        <h2 class="tag__title mb-1">[Know Japan]</h2>
+        <div class="map__ct--iframe">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7954118.248280957!2d133.4719774016878!3d35.058919543930024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2zSmFww6Nv!5e0!3m2!1spt-BR!2sbr!4v1729690024708!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="map__ct--text mt-2">
+            A land where natural splendours and timeless traditions meet neon sci-fi cities and a frenetic buzz, Japan
+            invites discovery at every turn. Be inspired by authentic experiences, invigorating nature breaks and
+            offbeat adventures doubling as refreshing escapes. Once you’re tapped out exploring, relive the day’s
+            highlights in a cosy ryokan or plush suite—sure to supercharge your well-being. Japan intrigues with its
+            kaleidoscope of sights and sounds. While wandering in the lap of luxury, make the most out of your next
+            getaway and tick off as many once-in-a-lifetime experiences. Prepare to be enthralled, captivated and
+            delighted all at once.</p>
+    </section>
+
+    <section class="bestplaces__ct">
+        <h2 class="tag__title mb-1">[Best Places]</h2>
+        <div class="bestplaces__ct--content">
+            <div class="card col justify-between">
+                <h2 class="text-uppercase">Tokyo</h2>
+                <article class="card__caption row align-center gap-1">
+                    <h3 class="card__caption--text">As Japan's bustling capital, Tokyo is a dynamic mix of tradition and
+                        modernity. It's famous for
+                        attractions like the Tokyo Tower, Shibuya Crossing, and Sensoji Temple. The city is also known
+                        for
+                        its shopping districts (e.g., Shinjuku, Ginza), vibrant nightlife, and world-class dining.</h3>
+                    <button class="card__caption--btn"><i class="bi bi-arrow-up-right"></i></button>
+                </article>
+            </div>
+            <div class="card col justify-between">
+                <h2 class="text-uppercase">Kyoto</h2>
+                <article class="card__caption row align-center gap-1">
+                    <h3 class="card__caption--text">Kyoto is the heart of Japan’s cultural heritage, renowned for its
+                        temples, shrines, and traditional
+                        tea houses. Highlights include the Fushimi Inari Shrine (with its iconic red torii gates), the
+                        Kinkaku-ji (Golden Pavilion), and the Arashiyama Bamboo Grove. It’s a city rich in history and
+                        ancient traditions.</h3>
+                    <button class="card__caption--btn"><i class="bi bi-arrow-up-right"></i></button>
+                </article>
+            </div>
+            <div class="card col justify-between">
+                <h2 class="text-uppercase">Osaka</h2>
+                <article class="card__caption row align-center gap-1">
+                    <h3 class="card__caption--text">Known for its food scene and friendly locals, Osaka is often called
+                        Japan's "kitchen." Tourists
+                        flock to Dotonbori for street food, neon lights, and canal-side restaurants. Other attractions
+                        include Osaka Castle, Universal Studios Japan, and the lively Shinsekai district.</h3>
+                    <button class="card__caption--btn"><i class="bi bi-arrow-up-right"></i></button>
+                </article>
+            </div>
+            <div class="card col justify-between">
+                <h2 class="text-uppercase">Yokohama</h2>
+                <article class="card__caption row align-center gap-1">
+                    <h3 class="card__caption--text">Yokohama, Japan's second-largest city, features a stunning
+                        waterfront
+                        and a blend of modern and traditional attractions. Highlights include the vibrant Minato Mirai
+                        district, historic Chinatown, and beautiful parks. Just a short trip from Tokyo, it's perfect
+                        for
+                        both day trips and longer stays!
+                    </h3>
+                    <button class="card__caption--btn"><i class="bi bi-arrow-up-right"></i></button>
+                </article>
+            </div>
+            <div class="card col justify-between">
+                <h2 class="text-uppercase">Hiroshima</h2>
+                <article class="card__caption row align-center gap-1">
+                    <h3 class="card__caption--text">Known worldwide for its history, Hiroshima is home to the Peace
+                        Memorial
+                        Park and the Atomic Bomb
+                        Dome, both dedicated to promoting peace. Nearby, the island of Miyajima is famous for the
+                        Itsukushima Shrine with its floating torii gate.</h3>
+                    <button class="card__caption--btn"><i class="bi bi-arrow-up-right"></i></button>
+                </article>
+            </div>
         </div>
     </section>
 
-    <section>
-
+    <section class="essential__ct col gap-1">
+        <h2 class="tag__title mb-1">[Essential]</h2>
+        <div class="essential__ct--content row">
+            <div class="essential__caption col align-center justify-center gap-1">
+                <h2 class="essential__caption--title text-uppercase">Stay</h2>
+                <p>A mix of the charming, modern, and tried and true.</p>
+            </div>
+            <swiper-container class="essential__slider">
+                <swiper-slide class="essential__slider--swiper grid-3 gap-1">
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/four-seasons.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Four Seasons Hotel, Kyoto</h2>
+                            <p class="card__caption--text">A luxurious retreat featuring traditional gardens and
+                                wellness-focused experiences​
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/hoshinoya-tokyo.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Hoshinoya, Tokyo</h2>
+                            <p class="card__caption--text">A modern ryokan in central Tokyo, offering a unique blend of
+                                tradition and
+                                contemporary luxury​.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/iraph-sui.webp" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Iraph Sui, Miyako Okinawa</h2>
+                            <p class="card__caption--text">A tropical island resort known for its beautiful ocean views
+                                and serene atmosphere​.
+                            </p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="essential__slider--swiper grid-3 gap-1">
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/conrad-osaka.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Conrad Osaka, Osaka</h2>
+                            <p class="card__caption--text">Known for its panoramic city views and high-end spa, located
+                                in Tokyo’s Shiodome
+                                district​.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/fufu-kawaguchiko.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Fufu Kawaguchiko, Yamanashi</h2>
+                            <p class="card__caption--text">Overlooking Lake Kawaguchi, this hotel offers stunning views
+                                of Mount Fuji.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/tokyo.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Gora Kadan, Hakone </h2>
+                            <p class="card__caption--text">A luxurious ryokan located in Hakone, famous for its hot
+                                springs and proximity to
+                                Mount Fuji​.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+        <div class="essential__ct--content row">
+            <div class="essential__caption col align-center justify-center gap-1">
+                <h2 class="essential__caption--title text-uppercase">Do</h2>
+                <p>A mix of the charming, modern, and tried and true.</p>
+            </div>
+            <swiper-container class="essential__slider">
+                <swiper-slide class="essential__slider--swiper grid-3 gap-1">
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/four-seasons.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Four Seasons Hotel, Kyoto</h2>
+                            <p class="card__caption--text">A luxurious retreat featuring traditional gardens and
+                                wellness-focused experiences​
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/hoshinoya-tokyo.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Hoshinoya, Tokyo</h2>
+                            <p class="card__caption--text">A modern ryokan in central Tokyo, offering a unique blend of
+                                tradition and
+                                contemporary luxury​.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/iraph-sui.webp" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Iraph Sui, Miyako Okinawa</h2>
+                            <p class="card__caption--text">A tropical island resort known for its beautiful ocean views
+                                and serene atmosphere​.
+                            </p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="essential__slider--swiper grid-3 gap-1">
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/conrad-osaka.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Conrad Osaka, Osaka</h2>
+                            <p class="card__caption--text">Known for its panoramic city views and high-end spa, located
+                                in Tokyo’s Shiodome
+                                district​.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/fufu-kawaguchiko.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Fufu Kawaguchiko, Yamanashi</h2>
+                            <p class="card__caption--text">Overlooking Lake Kawaguchi, this hotel offers stunning views
+                                of Mount Fuji.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/tokyo.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Gora Kadan, Hakone </h2>
+                            <p class="card__caption--text">A luxurious ryokan located in Hakone, famous for its hot
+                                springs and proximity to
+                                Mount Fuji​.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+        <div class="essential__ct--content row">
+            <div class="essential__caption col align-center justify-center gap-1">
+                <h2 class="essential__caption--title text-uppercase">Eat</h2>
+                <p>A mix of the charming, modern, and tried and true.</p>
+            </div>
+            <swiper-container class="essential__slider">
+                <swiper-slide class="essential__slider--swiper grid-3 gap-1">
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/four-seasons.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Four Seasons Hotel, Kyoto</h2>
+                            <p class="card__caption--text">A luxurious retreat featuring traditional gardens and
+                                wellness-focused experiences​
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/hoshinoya-tokyo.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Hoshinoya, Tokyo</h2>
+                            <p class="card__caption--text">A modern ryokan in central Tokyo, offering a unique blend of
+                                tradition and
+                                contemporary luxury​.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/iraph-sui.webp" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Iraph Sui, Miyako Okinawa</h2>
+                            <p class="card__caption--text">A tropical island resort known for its beautiful ocean views
+                                and serene atmosphere​.
+                            </p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="essential__slider--swiper grid-3 gap-1">
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/conrad-osaka.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Conrad Osaka, Osaka</h2>
+                            <p class="card__caption--text">Known for its panoramic city views and high-end spa, located
+                                in Tokyo’s Shiodome
+                                district​.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/places/fufu-kawaguchiko.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Fufu Kawaguchiko, Yamanashi</h2>
+                            <p class="card__caption--text">Overlooking Lake Kawaguchi, this hotel offers stunning views
+                                of Mount Fuji.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__img row">
+                            <img src="./assets/img/tokyo.jpg" alt="">
+                        </div>
+                        <div class="card__caption col justify-between gap-05">
+                            <h2 class="card__caption--title">Gora Kadan, Hakone </h2>
+                            <p class="card__caption--text">A luxurious ryokan located in Hakone, famous for its hot
+                                springs and proximity to
+                                Mount Fuji​.</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
     </section>
 
-    <section>
-
+    <section class="metrics__ct">
+        <h2 class="tag__title mb-1 text-center">[Our Results]</h2>
+        <div class="metrics__ct--content row gap-2">
+            <div class="card text-center">
+                <h2 class="card__num">73</h2>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis et earum?
+                </p>
+            </div>
+            <div class="card text-center">
+                <h2 class="card__num">99</h2>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis et earum?
+                </p>
+            </div>
+            <div class="card text-center">
+                <h2 class="card__num">1200</h2>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis et earum?
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section>
+    <div class="flights__ct row justify-center align-center">
+        <div class="flights__caption col justify-center gap-1">
+            <h2 class="flights__caption--title">Tired of searching for flights?
+                Get cheap flight alerts delivered.</h2>
+            <button>Get Going</button>
+        </div>
+    </div>
 
-    </section>
+    <div class="mobile__ct ">
+        <div class="mobile__ct--content grid-3-md">
+            <div class="card col justify-end">
+                <div class="card__caption">
+                    <h2>Expand Your Network</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="./assets/img/mobile-phone.png" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__caption row align-center gap-1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error expedita molestiae
+                        doloribus
+                        accusamus mollitia.</p>
+                    <button>
+                        <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
+        <div class="newsletter__ct">
 
+        </div>
+        <div class="footer__nav">
+
+        </div>
+        <div class="footer__social">
+
+        </div>
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 
 </html>

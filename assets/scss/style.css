@@ -1,13 +1,282 @@
 @import './reset/reset.css';
-body {
-  background-color: #000;
-  color: #fff;
+@import '/assets/font/font.css';
+.cc {
+  font-family: "Product Sans Black Regular";
+  font-weight: bold;
+  font-size: 2rem;
 }
 
+.tag__title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+body {
+  font-family: "Product Sans Regular";
+  font-weight: normal;
+}
+
+.hero__ct {
+  position: relative;
+  height: 100svh;
+  z-index: 1;
+}
 .hero__ct .hero__swiper {
-  height: 85svh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.map__ct {
+  padding: 4rem 0;
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+}
+.map__ct--iframe {
+  width: 100%;
+  height: 50vh;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.map__ct--iframe iframe {
+  width: 100%;
+  height: 100%;
+}
+.map__ct--text {
+  margin: 0 auto;
+}
+
+.bestplaces__ct {
+  padding: 4rem 1rem;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.bestplaces__ct--content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  gap: 1rem;
+}
+.bestplaces__ct--content .card {
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.bestplaces__ct--content .card::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.bestplaces__ct--content .card__caption--text {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bestplaces__ct--content .card__caption--btn {
+  min-width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #fff;
+  border-radius: 50%;
+  color: #000;
+  transition: all 0.2s ease-in;
+  font-size: 1.1rem;
+}
+.bestplaces__ct--content .card:nth-child(1) {
+  grid-column: span 3/span 3;
+}
+.bestplaces__ct--content .card:nth-child(2) {
+  grid-column: span 3/span 3;
+  grid-column-start: 4;
+}
+.bestplaces__ct--content .card:nth-child(3) {
+  grid-column: span 2/span 2;
+  grid-row-start: 2;
+}
+.bestplaces__ct--content .card:nth-child(4) {
+  grid-column: span 2/span 2;
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+.bestplaces__ct--content .card:nth-child(5) {
+  grid-column: span 2/span 2;
+  grid-column-start: 5;
+  grid-row-start: 2;
+}
+.bestplaces__ct--content .card:hover .card__caption--text {
+  text-decoration: underline;
+}
+.bestplaces__ct--content .card:hover .card__caption--btn {
+  rotate: 45deg;
+}
+.bestplaces__ct--content .card::before {
+  background-size: cover;
+  filter: brightness(70%);
+  transition: all 0.2s ease-in;
+}
+.bestplaces__ct--content .card:hover::before {
+  scale: 1.05;
+  filter: brightness(40%);
+}
+.bestplaces__ct--content .card:nth-of-type(1)::before {
+  background-image: url("/assets/img/cities/Tokyo.webp");
+}
+.bestplaces__ct--content .card:nth-of-type(2)::before {
+  background-image: url("/assets/img/cities/Kyoto.webp");
+}
+.bestplaces__ct--content .card:nth-of-type(3)::before {
+  background-image: url("/assets/img/cities/Osaka.webp");
+}
+.bestplaces__ct--content .card:nth-of-type(4)::before {
+  background-image: url("/assets/img/cities//Yokohama.webp");
+}
+.bestplaces__ct--content .card:nth-of-type(5)::before {
+  background-image: url("/assets/img/cities/Hiroshima.webp");
+}
+
+.showcase__ct .showcase__caption--title {
+  font-size: 2.5rem;
 }
 .showcase__ct .showcase__caption--text {
   margin: auto;
   max-width: 768px;
+}
+.showcase__ct .showcase__card--img img {
+  width: 220px;
+}
+
+.carrossel__ct .carrossel__caption--title {
+  color: #fff;
+  font-size: 4rem;
+}
+.carrossel__ct .carrossel__caption--title .misc {
+  color: #000;
+  -webkit-text-stroke: 0.15rem #fff;
+  /* Remove "solid" */
+}
+
+.essential__ct {
+  padding: 4rem 1rem;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.essential__ct--content {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.essential__ct--content .essential__caption {
+  max-width: 200px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.essential__ct--content .essential__caption--title {
+  font-size: 2rem;
+}
+.essential__ct--content .essential__slider {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.essential__ct--content .essential__slider--swiper {
+  padding: 1rem;
+  display: flex;
+  width: 100% !important;
+}
+.essential__ct--content .essential__slider--swiper .card {
+  display: grid;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  background-color: #eef0f2;
+}
+.essential__ct--content .essential__slider--swiper .card__img img {
+  border-radius: 1rem;
+}
+.essential__ct--content .essential__slider--swiper .card__caption {
+  padding: 1rem;
+}
+.essential__ct--content .essential__slider--swiper .card__caption--title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.essential__ct--content .essential__slider--swiper .card__caption--text {
+  font-size: 0.9rem;
+}
+
+.metrics__ct {
+  padding: 4rem 0;
+}
+.metrics__ct--content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.metrics__ct--content .card {
+  padding: 1rem;
+  background-color: #eef0f2;
+  border-radius: 1rem;
+}
+.metrics__ct--content .card__num {
+  font-size: 8rem;
+  font-weight: 400;
+}
+.metrics__ct--content .card__text {
+  font-weight: 300;
+}
+
+.flights__ct {
+  margin: 2rem 0;
+  padding: 4rem;
+  background-color: #D80905;
+  color: #fff;
+}
+.flights__ct .flights__caption--title {
+  max-width: 992px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.mobile__ct {
+  padding: 4rem;
+  margin: 0 auto;
+  max-width: 1024px;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.explore__ct {
+  position: relative;
+  z-index: 1;
+}
+.explore__ct::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */

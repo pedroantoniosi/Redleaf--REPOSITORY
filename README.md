@@ -1,2 +1,1 @@
-# redleaf
-Welcome to ReadLeaf, a dynamic web application designed to promote and enhance the experience of Japanese tourism. This project utilizes HTML, SASS, and JavaScript to create an engaging and user-friendly interface that showcases the beauty and culture of Japan.
+RedLeaf Bem-vindo ao ReadLeaf, uma aplicação web dinâmica projetada para promover e aprimorar a experiência do turismo no Japão. Este projeto utiliza HTML, SASS e JavaScript para criar uma interface envolvente e amigável que destaca a beleza e a cultura do Japão
